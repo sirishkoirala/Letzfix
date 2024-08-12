@@ -1,0 +1,22 @@
+[
+   {
+      "name": "Laptop",
+      "image": "./devices/laptop.png"
+   },
+   {
+      "name": "Phone",
+      "image": "./devices/phone.png"
+   },
+   {
+      "name": "Tablets",
+      "image": "./devices/tablet.png"
+   },
+   {
+      "name": "Game console",
+      "image": "./devices/gameconsole.png"
+   },
+   {
+      "name": "Something else",
+      "image": "./devices/something.png"
+   }
+]
