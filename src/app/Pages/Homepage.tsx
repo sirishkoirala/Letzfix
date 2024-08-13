@@ -1,49 +1,46 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useDevices } from "./../hooks/useDevices";
 import Navbar from "../components/Navbar";
 import HeroHomePage from "../components/HeroHomePage";
 import DeviceCard from "../components/DeviceCard";
 import OnScrollPop from "../components/OnScrollPop";
+import Companies from "../components/Companies";
+import FeatureTitle from "../components/FeatureTitle";
+import FeatureCard from "../components/FeatureCard";
+import Feature2 from "../components/Feature2";
+import LogoSupports from "../components/LogoSupports";
+import BlackBanner from "../components/BlackBanner";
+import VideoBlock from "../components/VideoBlock";
+import TechRepairDoneRight from "../components/TechRepairDoneRight";
+import WhatWeCanFixForYou from "../components/WhatWeCanFixForYou";
 import { Device } from "../types/deviceTypes";
 
 const Homepage: React.FC = () => {
-   const [devices, setDevices] = useState<Device[]>([]);
-
-   const fetchDevices = async () => {
-      try {
-         const deviceData: Device[] = [];
-
-         for (let i = 0; i <= 4; i++) {
-            const response = await fetch(`http://localhost:3000/${i}`);
-            if (!response.ok) {
-               throw new Error(`HTTP error! status: ${response.status} for /${i}`);
-            }
-            const data: Device = await response.json();
-            deviceData.push(data);
-         }
-
-         setDevices(deviceData);
-      } catch (err) {
-         console.error(err instanceof Error ? err.message : "An unexpected error occurred");
-      }
-   };
-   console.log(devices);
-
-   useEffect(() => {
-      fetchDevices();
-   }, []);
+   const { devices, isLoading, isError } = useDevices();
+   if (isLoading) return <div>Loading...</div>;
+   if (isError) return <div>Failed to load devices</div>;
 
    return (
       <>
          <OnScrollPop />
          <Navbar />
          <HeroHomePage />
-         <h1 className="text-3xl font-semibold containers mt-8">Our Services</h1>
+         <h1 className="text-3xl font-semibold containers mt-8 tracking-tight">Our Services</h1>
          <div className="flex flex-wrap containers gap-12 my-8 items-center justify-center">
-            {devices.map((device) => (
+            {devices?.map((device: Device) => (
                <DeviceCard key={device.name} device={device} />
             ))}
          </div>
+         <Companies />
+         <FeatureTitle />
+         <FeatureCard />
+         <Feature2 />
+         <LogoSupports />
+         <BlackBanner />
+         <VideoBlock />
+         <TechRepairDoneRight />
+         <WhatWeCanFixForYou />
       </>
    );
 };

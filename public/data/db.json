@@ -1,22 +1,34 @@
-[
-   {
-      "name": "Laptop",
-      "image": "./devices/laptop.png"
-   },
-   {
-      "name": "Phone",
-      "image": "./devices/phone.png"
-   },
-   {
-      "name": "Tablets",
-      "image": "./devices/tablet.png"
-   },
-   {
-      "name": "Game console",
-      "image": "./devices/gameconsole.png"
-   },
-   {
-      "name": "Something else",
-      "image": "./devices/something.png"
-   }
-]
+{
+   "devices": [
+      {
+         "name": "Laptop",
+         "image": "./devices/laptop.png"
+      },
+      {
+         "name": "Phone",
+         "image": "./devices/phone.png"
+      },
+      {
+         "name": "Tablets",
+         "image": "./devices/tablet.png"
+      },
+      {
+         "name": "Game console",
+         "image": "./devices/gameconsole.png"
+      },
+      {
+         "name": "Something else",
+         "image": "./devices/something.png"
+      }
+   ],
+   "deviceDetails": [
+      {
+         "name": "Laptop",
+         "description": "A laptop is a portable personal computer designed for mobile use. They are fitted with a keyboard, display screen, and pointing evice (such as a touchpad or pointing stick), with a battery provided to power the device. Laptops are highly portable, allowing users to work in a variety of locations, including at home, in the office, or outdoors."
+      },
+      {
+         "name": "Phone",
+         "description": "A phone is a portable communication device that allows users to make and receive calls and send and receive text messages. They are also used for accessing the internet, playing games, and taking photos."
+      }
+   ]
+}
