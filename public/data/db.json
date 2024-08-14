@@ -21,14 +21,48 @@
          "image": "./devices/something.png"
       }
    ],
-   "deviceDetails": [
+   "featureCard": [
       {
-         "name": "Laptop",
-         "description": "A laptop is a portable personal computer designed for mobile use. They are fitted with a keyboard, display screen, and pointing evice (such as a touchpad or pointing stick), with a battery provided to power the device. Laptops are highly portable, allowing users to work in a variety of locations, including at home, in the office, or outdoors."
+         "image": "/features/iphone-screen.png",
+         "detail": "Fix your broken or cracked iPhone screen for a low price",
+         "button": "Learn More"
       },
       {
-         "name": "Phone",
-         "description": "A phone is a portable communication device that allows users to make and receive calls and send and receive text messages. They are also used for accessing the internet, playing games, and taking photos."
+         "image": "/features/samsung.png",
+         "detail": "Let our trusted experts repair your cracked Samsung® screen",
+         "button": "Learn More"
+      },
+      {
+         "image": "/features/google-pixel.png",
+         "detail": "Have your Google Pixel™ put back in one piece by an authorized repair provider",
+         "button": "View Details"
+      }
+   ],
+   "logos": [
+      {
+         "name": "Trusted professionals",
+         "image": "./logoSupport/device-repair.svg",
+         "detail": "We have thousands of U.S.-based experts ready to help."
+      },
+      {
+         "name": "Speedy service",
+         "image": "./logoSupport/icons-value.svg",
+         "detail": "Most repairs done in 45 minutes or less."
+      },
+      {
+         "name": "Free diagnostics",
+         "image": "./logoSupport/icons-value-no_cost_diagnostics.svg",
+         "detail": "Not sure what’s wrong? Let us take a look."
+      },
+      {
+         "name": "Low price guarantee",
+         "image": "./logoSupport/icons-value-low_price_guarantee.svg",
+         "detail": " We'll beat any local competitor’s published price for the same repair by $5."
+      },
+      {
+         "name": "1-year limited warranty",
+         "image": "./logoSupport/icons-value-one_year_warranty.svg",
+         "detail": "Most repairs come with our hassle-free warranty—valid at any location."
       }
    ]
 }

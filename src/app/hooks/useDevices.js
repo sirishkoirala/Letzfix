@@ -4,7 +4,6 @@ import { fetcher } from '../utils';
 
 export function useDevices() {
    const url = `${API_HOST}/devices`;
-
    const { data, error, isLoading } = useSWR(url, fetcher)
 
    return {
