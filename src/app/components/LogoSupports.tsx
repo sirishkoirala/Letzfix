@@ -3,7 +3,7 @@ import { Logos } from "../types/logoSupport";
 import { useLogos } from "../hooks/useLogos";
 import Skeleton from "react-loading-skeleton";
 
-const LogoSupports = () => {
+const LogoSupports :React.FC = () => {
    const { logos, isLoading, isError } = useLogos();
    if (isLoading)
       return (

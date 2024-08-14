@@ -64,5 +64,39 @@
          "image": "./logoSupport/icons-value-one_year_warranty.svg",
          "detail": "Most repairs come with our hassle-free warranty—valid at any location."
       }
+   ],
+   "repairDevices": [
+      {
+         "name": "iPhone Repair",
+         "image": "./repairDevices/iphone.png"
+      },
+      {
+         "name": "Samsung Repair",
+         "image": "./repairDevices/galaxy.png"
+      },
+      {
+         "name": "Google Repair",
+         "image": "./repairDevices/pixel.png"
+      },
+      {
+         "name": "iPad Repaid",
+         "image": "./repairDevices/ipad.png"
+      },
+      {
+         "name": "Cell Phone Repair",
+         "image": "./repairDevices/cellphone.png"
+      },
+      {
+         "name": "Tablet Repair",
+         "image": "./repairDevices/tablet.png"
+      },
+      {
+         "name": "Computer Repair",
+         "image": "./repairDevices/computer.png"
+      },
+      {
+         "name": "Game Console Repair" ,
+         "image": "./repairDevices/game-console.png"
+      }
    ]
 }
