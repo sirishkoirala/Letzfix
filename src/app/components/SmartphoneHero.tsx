@@ -1,30 +1,28 @@
 import { IconClock12, IconReceipt2, IconShieldLock } from "@tabler/icons-react";
 import React from "react";
-
-const SmartphoneHero = () => {
+interface SmartphoneHeroProps {
+   image: string;
+   title: string;
+   description: string;
+}
+const SmartphoneHero = ({ title, image, description }: SmartphoneHeroProps) => {
    return (
       <>
          <div className="containers mt-8">
             <div className="grid grid-cols-2 ">
-               <div
-                  className="h-[640px] w-400 "
-                  style={{ backgroundImage: `url('./devicePage/smartphone-repair-feature-half.jpg')` }}
-               ></div>
+               <div className="h-[640px] w-400 " style={{ backgroundImage: `url(${image})` }}></div>
                <div className="pl-10 flex flex-col items-start justify-center">
-                  <h2 className="text-[40px] leading-[46px] font-light">Smartphone repairs</h2>
-                  <p className="text-[20px] leading-[30px] font-light mt-6">
-                     Broken Smartphone? Our trusted experts can provide reliable repairs—fast.
-                  </p>
+                  <h2 className="text-[40px] leading-[46px] font-light">{title}</h2>
+                  <p className="text-[20px] leading-[30px] font-light mt-6">{description}</p>
                   <div className="flex flex-col gap-6 mt-7">
                      <div className="flex items-center gap-4">
                         <IconReceipt2 size={44} stroke={1.4} />
                         <p className="text-[18px] leading-[29px]">
                            <span className=" text-teal-600 underline underline-offset-4 cursor-pointer">
                               Free diagnostics and
-                           </span>{" "}
+                           </span>
                            and
                            <span className=" text-teal-600 underline underline-offset-4 cursor-pointer">
-                              {" "}
                               a low price guarantee
                            </span>
                         </p>

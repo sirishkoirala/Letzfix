@@ -5,20 +5,20 @@ import { useDevices } from "./../hooks/useDevices";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
-
 const DeviceCardContianer = () => {
    const { devices, isLoading, isError } = useDevices();
-   if (isLoading) return (
-      <div className="containers">
-         <Skeleton count={8} />
-      </div>
-   );
+   if (isLoading)
+      return (
+         <div className="containers">
+            <Skeleton count={8} />
+         </div>
+      );
    if (isError) return <div>Failed to load devices</div>;
    return (
       <>
          <div className="flex flex-wrap containers gap-12 my-8 items-center justify-center">
             {devices?.map((device: Device) => (
-               <DeviceCard key={device.name} device={device} />
+               <DeviceCard key={device.id} device={device} />
             ))}
          </div>
       </>

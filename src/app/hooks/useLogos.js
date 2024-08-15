@@ -1,11 +1,10 @@
+// import { API_HOST } from '../constants';
 import useSWR from 'swr';
-import { API_HOST } from '../constants';
 import { fetcher } from '../utils';
 
 export function useLogos(){
-   const url = `${API_HOST}/logos`;
 
-   const { data , error , isLoading} = useSWR(url, fetcher)
+   const { data , error , isLoading} = useSWR('./data/static.json/logos', fetcher)
 
    return {
       logos: data,

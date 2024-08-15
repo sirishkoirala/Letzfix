@@ -3,7 +3,7 @@ import React from "react";
 const RepairsReplacements = () => {
    return (
       <>
-         <div className="containers mt-12">
+         <div className="containers my-12">
             <div className="px-56 text-center">
                <h1 className="text-[30px] leading-[45px] tracking-tight font-light">
                   Smartphone repairs, battery replacements, fixed cracked screens, and more

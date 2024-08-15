@@ -13,7 +13,7 @@ import VideoBlock from "../components/VideoBlock";
 import TechRepairDoneRight from "../components/TechRepairDoneRight";
 import WhatWeCanFixForYou from "../components/WhatWeCanFixForYou";
 import DeviceCardContianer from "../components/DeviceCardContianer";
-import RepairDevices from "../components/RepairDevices";
+import SmartPhones from "../components/SmartPhones";
 import YourTechFixed from "../components/YourTechFixed";
 import Footer from "../components/Footer";
 
@@ -33,7 +33,7 @@ const Homepage: React.FC = () => {
          <VideoBlock />
          <TechRepairDoneRight />
          <WhatWeCanFixForYou />
-         <RepairDevices />
+         <SmartPhones />
          <YourTechFixed />
          <Footer />
       </>

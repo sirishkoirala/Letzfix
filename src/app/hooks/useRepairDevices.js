@@ -3,12 +3,12 @@ import { fetcher } from "../utils";
 import useSWR from "swr";
 
 export function useRepairDevices() {
-   const url = `${API_HOST}/repairDevices`;
+   const url = `${API_HOST}/smart-phones`;
 
    const { data, isLoading, errorm } = useSWR(url, fetcher)
 
    return {
-      repairDevices: data,
+      smartPhones: data,
       isLoading,
       isError: errorm
    }

@@ -1,102 +1,99 @@
 {
    "devices": [
       {
+         "id": "device1",
          "name": "Laptop",
-         "image": "./devices/laptop.png"
+         "image": "/devices/laptop.png"
       },
       {
+         "id": "device2",
          "name": "Phone",
-         "image": "./devices/phone.png"
+         "image": "/devices/phone.png"
       },
       {
+         "id": "device3",
          "name": "Tablets",
-         "image": "./devices/tablet.png"
+         "image": "/devices/tablet.png"
       },
       {
+         "id": "device4",
          "name": "Game console",
-         "image": "./devices/gameconsole.png"
+         "image": "/devices/gameconsole.png"
       },
       {
+         "id": "device5",
          "name": "Something else",
-         "image": "./devices/something.png"
+         "image": "/devices/something.png"
       }
    ],
-   "featureCard": [
+
+   "smart-phones": [
       {
-         "image": "/features/iphone-screen.png",
-         "detail": "Fix your broken or cracked iPhone screen for a low price",
-         "button": "Learn More"
-      },
-      {
-         "image": "/features/samsung.png",
-         "detail": "Let our trusted experts repair your cracked Samsung® screen",
-         "button": "Learn More"
-      },
-      {
-         "image": "/features/google-pixel.png",
-         "detail": "Have your Google Pixel™ put back in one piece by an authorized repair provider",
-         "button": "View Details"
-      }
-   ],
-   "logos": [
-      {
-         "name": "Trusted professionals",
-         "image": "./logoSupport/device-repair.svg",
-         "detail": "We have thousands of U.S.-based experts ready to help."
-      },
-      {
-         "name": "Speedy service",
-         "image": "./logoSupport/icons-value.svg",
-         "detail": "Most repairs done in 45 minutes or less."
-      },
-      {
-         "name": "Free diagnostics",
-         "image": "./logoSupport/icons-value-no_cost_diagnostics.svg",
-         "detail": "Not sure what’s wrong? Let us take a look."
-      },
-      {
-         "name": "Low price guarantee",
-         "image": "./logoSupport/icons-value-low_price_guarantee.svg",
-         "detail": " We'll beat any local competitor’s published price for the same repair by $5."
-      },
-      {
-         "name": "1-year limited warranty",
-         "image": "./logoSupport/icons-value-one_year_warranty.svg",
-         "detail": "Most repairs come with our hassle-free warranty—valid at any location."
-      }
-   ],
-   "repairDevices": [
-      {
+         "id": 1,
          "name": "iPhone Repair",
-         "image": "./repairDevices/iphone.png"
+         "image": "/smart-phones/iphone.png"
       },
       {
+         "id": 2,
          "name": "Samsung Repair",
-         "image": "./repairDevices/galaxy.png"
+         "image": "/smart-phones/galaxy.png"
       },
       {
+         "id": 3,
          "name": "Google Repair",
-         "image": "./repairDevices/pixel.png"
+         "image": "/smart-phones/pixel.png"
       },
       {
+         "id": 4,
          "name": "iPad Repaid",
-         "image": "./repairDevices/ipad.png"
+         "image": "/smart-phones/ipad.png"
       },
       {
+         "id": 5,
          "name": "Cell Phone Repair",
-         "image": "./repairDevices/cellphone.png"
+         "image": "/smart-phones/cellphone.png"
       },
       {
+         "id": 6,
          "name": "Tablet Repair",
-         "image": "./repairDevices/tablet.png"
+         "image": "/smart-phones/tablet.png"
       },
       {
+         "id": 7,
          "name": "Computer Repair",
-         "image": "./repairDevices/computer.png"
+         "image": "/smart-phones/computer.png"
       },
       {
-         "name": "Game Console Repair" ,
-         "image": "./repairDevices/game-console.png"
+         "id": 8,
+         "name": "Game Console Repair",
+         "image": "/smart-phones/game-console.png"
+      }
+   ],
+   "phones": [
+      {
+         "id": 1,
+         "name": "iPhone",
+         "image": "/smartphones/iphone.jpeg"
+      },
+      {
+         "id": 2,
+         "name": "Samsung",
+         "image": "/smartphones/samsung.png"
+      },
+      {
+         "id": 3,
+         "name": "Google Pixel",
+         "image": "/smartphones/pixel.png"
+      },
+      {
+         "id": 4,
+         "name": "Morotola",
+         "image": "/smartphones/motorola.jpeg"
+      },
+      {
+         "id": 5,
+         "name": "LG",
+         "image": "/smartphones/LG.png"
       }
    ]
 }

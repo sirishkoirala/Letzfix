@@ -1,27 +1,34 @@
+"use client";
 import React from "react";
-import { feature } from "./../types/featureCard";
-import { useFeatureCard } from "../hooks/usefeatureCard";
-import Skeleton from "react-loading-skeleton";
+import { Feature } from "./../types/featureCard";
+const featureCard: Feature[] = [
+   {
+      id: 1,
+      image: "/features/iphone-screen.png",
+      detail: "Fix your broken or cracked iPhone screen for a low price",
+      button: "Learn More",
+   },
+   {
+      id: 2,
+      image: "/features/samsung.png",
+      detail: "Let our trusted experts repair your cracked Samsung® screen",
+      button: "Learn More",
+   },
+   {
+      id: 3,
+      image: "/features/google-pixel.png",
+      detail: "Have your Google Pixel™ put back in one piece by an authorized repair provider",
+      button: "View Details",
+   },
+];
 
 const FeatureCard = () => {
-   const { featureCard, isLoading, isError } = useFeatureCard();
-   if (isLoading)
-      return (
-         <div className="containers">
-            <Skeleton count={1}  height={400} />;
-         </div>
-      );
-
-   if (isError) {
-      return <div>Something went wrong</div>;
-   }
-
    return (
       <>
          <div className="containers flex justify-around items-center flex-wrap ">
-            {featureCard?.map((feature: feature) => {
+            {featureCard?.map((feature: Feature) => {
                return (
-                  <div className="w-[400px]">
+                  <div key={feature.id} className="w-[400px]">
                      <img src={feature.image} alt="google-pixel" className="w-[400px] " />
                      <div className="flex flex-col items-center justify-center">
                         <p className="my-4 text-center">{feature.detail}</p>

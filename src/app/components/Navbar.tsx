@@ -7,7 +7,7 @@ const Navbar = () => {
    return (
       <nav className="flex items-center justify-between p-4 containers">
          <div className="flex items-center">
-            <img src="logo.jpg" alt="Logo" className="w-28" />
+            <img src="/logo.jpg" alt="Logo" className="w-28" />
          </div>
          <div className="flex space-x-12 items-center">
             <div className="relative group">
