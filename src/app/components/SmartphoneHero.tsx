@@ -1,11 +1,19 @@
+'use client';
 import { IconClock12, IconReceipt2, IconShieldLock } from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 import React from "react";
 interface SmartphoneHeroProps {
    image: string;
    title: string;
    description: string;
 }
+
+
 const SmartphoneHero = ({ title, image, description }: SmartphoneHeroProps) => {
+const router = useRouter();
+   const handleClick = ()=>{
+      router.push("/repairs/device-details")
+   }
    return (
       <>
          <div className="containers mt-8">
@@ -32,7 +40,6 @@ const SmartphoneHero = ({ title, image, description }: SmartphoneHeroProps) => {
                         <p className="text-[18px] leading-[29px]">
                            Most repairs done as soon as
                            <span className="text-teal-600 underline underline-offset-4 cursor-pointer ">
-                              {" "}
                               the same day
                            </span>
                         </p>
@@ -48,7 +55,7 @@ const SmartphoneHero = ({ title, image, description }: SmartphoneHeroProps) => {
                      </div>
                   </div>
                   <div className="mt-7 flex flex-col gap-4">
-                     <button className="px-6 py-2 bg-teal-700 text-white text-[16px] leading-[29px] tracking-tight rounded-full border border-teal-700">
+                     <button className="px-6 py-2 bg-teal-700 text-white text-[16px] leading-[29px] tracking-tight rounded-full border border-teal-700" onClick={()=>handleClick()}>
                         Schedule a repair
                      </button>
                      <button className="px-6 py-2 bg-white text-teal-700 text-[16px] leading-[29px] tracking-tight rounded-full border border-teal-700">

@@ -1,11 +1,10 @@
+import DeviceDetails from "@/app/components/DeviceDetails";
 import React from "react";
-import Homepage from "./Pages/Homepage";
 
 const page = () => {
-
    return (
       <>
-         <Homepage />
+         <DeviceDetails />
       </>
    );
 };

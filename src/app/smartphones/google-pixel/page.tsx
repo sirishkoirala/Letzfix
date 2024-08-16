@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import AnySmartphonesNewOrOld from "@/app/components/AnySmartphonesNewOrOld";
 import CompaniesInRepair from "@/app/components/CompaniesInRepair";

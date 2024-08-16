@@ -1,19 +1,28 @@
-"use client";
+"use client"; 
+
 import { IconChevronRight } from "@tabler/icons-react";
 import React from "react";
 import Skeleton from "react-loading-skeleton";
 import { RepairDevice } from "../types/repairDevices";
-import { useAnySmartphones } from "../hooks/useAnySmartphones";
+import { usePhones } from "../hooks/usePhones";
+import { useRouter } from "next/navigation";
 
 const AnySmartphonesNewOrOld = () => {
-   const { Smartphones, isLoading, isError } = useAnySmartphones();
+   const router = useRouter(); 
+   const { Smartphones, isLoading, isError } = usePhones();
+
    if (isLoading)
       return (
          <div className="containers">
             <Skeleton count={12} />
          </div>
       );
+
    if (isError) return <div>Error...</div>;
+
+   const handleClick = (deviceUrl: string) => {
+      router.push(deviceUrl); 
+   };
 
    return (
       <>
@@ -29,10 +38,16 @@ const AnySmartphonesNewOrOld = () => {
                <div className="grid grid-cols-4 gap-8 mt-4">
                   {Smartphones.map((smartphone: RepairDevice) => {
                      return (
-                        <div key={smartphone.id} className="col-span-1 flex flex-col gap-4 justify-center items-center cursor-pointer ">
+                        <div
+                           key={smartphone.id}
+                           className="col-span-1 flex flex-col gap-4 justify-center items-center cursor-pointer"
+                           onClick={() => handleClick(smartphone.url)}
+                        >
                            <img src={smartphone.image} alt="" className="h-36" />
                            <div className="flex items-center justify-center">
-                              <p className="text-[15px] font-light leading-[26px] hover:underline-offset-2 hover:underline">{smartphone.name}</p>
+                              <p className="text-[15px] font-light leading-[26px] hover:underline-offset-2 hover:underline">
+                                 {smartphone.name}
+                              </p>
                               <IconChevronRight stroke={1.6} size={18} color="teal" />
                            </div>
                         </div>

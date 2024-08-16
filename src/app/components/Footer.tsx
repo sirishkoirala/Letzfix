@@ -1,4 +1,4 @@
-import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter, IconBrandYoutube, IconBrandYoutubeFilled } from "@tabler/icons-react";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter, IconBrandYoutube } from "@tabler/icons-react";
 import React from "react";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                <footer className=" containers px-4">
                   <div className=" grid grid-cols-12 ">
                      <div className="col-span-2">
-                        <img src="./logoDarkMode.jpg" alt="" className="pr-28 " />
+                        <img src="/logoDarkMode.jpg" alt="" className="pr-28 " />
                      </div>
                      <div className="col-span-2">
                         <div className="w-10/12">

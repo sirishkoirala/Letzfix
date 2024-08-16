@@ -39,7 +39,7 @@ const LogoSupports: React.FC = () => {
    return (
       <div className="flex flex-wrap items-center justify-center containers my-12 px-4 pb-4">
          {logos?.map((logo: Logos) => (
-            <div key={logo.id} className="flex flex-col items-center text-center p-4 w-[280px] h-[220px]">
+            <div key={logo.id} className="flex flex-col items-center text-center p-4 w-[265px] h-[220px]">
                <img alt="tools-icon" src={logo.image} className="rounded-full mb-2" />
                <h3 className="text-lg font-semibold text-foreground cursor-pointer">{logo.name}</h3>
                <p className="text-muted-foreground">{logo.detail}</p>
