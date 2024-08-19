@@ -1,4 +1,4 @@
-export interface RepairDevice{
+export interface Tsmartphones{
    id: number;
    name: string;
    image: string;

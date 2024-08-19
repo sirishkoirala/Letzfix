@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import { RepairDevice } from "../types/repairDevices";
-import { useRepairDevices } from "../hooks/useRepairDevices";
+import { Tsmartphones } from "../types/Tsmartphones";
+import { useSmartphones } from "../hooks/useSmartphones";
 import Skeleton from "react-loading-skeleton";
 import { useRouter } from "next/navigation";
 
 const SmartPhones = () => {
    const router = useRouter();
-   const { smartPhones, isLoading, isError } = useRepairDevices();
+   const { smartPhones, isLoading, isError } = useSmartphones();
    if (isLoading)
       return (
          <div className="containers">
@@ -23,7 +23,7 @@ const SmartPhones = () => {
    return (
       <>
          <div className="containers flex flex-wrap gap-4   px-36  mb-[20px]">
-            {smartPhones?.map((device: RepairDevice) => {
+            {smartPhones?.map((device: Tsmartphones) => {
                return (
                   <div
                      key={device.id}

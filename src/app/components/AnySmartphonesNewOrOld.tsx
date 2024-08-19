@@ -3,7 +3,7 @@
 import { IconChevronRight } from "@tabler/icons-react";
 import React from "react";
 import Skeleton from "react-loading-skeleton";
-import { RepairDevice } from "../types/repairDevices";
+import { Tsmartphones } from "../types/Tsmartphones";
 import { usePhones } from "../hooks/usePhones";
 import { useRouter } from "next/navigation";
 
@@ -36,7 +36,7 @@ const AnySmartphonesNewOrOld = () => {
                </p>
 
                <div className="grid grid-cols-4 gap-8 mt-4">
-                  {Smartphones.map((smartphone: RepairDevice) => {
+                  {Smartphones.map((smartphone: Tsmartphones) => {
                      return (
                         <div
                            key={smartphone.id}

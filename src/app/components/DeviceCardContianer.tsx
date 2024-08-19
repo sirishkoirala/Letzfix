@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
 
 const DeviceCardContainer = () => {
    const { devices, isLoading, isError } = useDevices();
+   
+
    const router = useRouter();
 
    if (isLoading)
@@ -35,7 +37,7 @@ const DeviceCardContainer = () => {
                >
                   <img src={device.image} alt={device.name} className="h-36 w-36 mx-auto object-fill" />
                   <div className="flex items-center justify-center gap-1">
-                     <p className="text-base">{device.name}</p>
+                     <p className="text-base">Hello {device.name}</p>
                      <IconChevronRight stroke={2} size={19} color="teal" />
                   </div>
                </div>
